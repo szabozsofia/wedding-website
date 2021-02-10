@@ -1,0 +1,353 @@
+/* ==== SIMPLE BOX-SIZING DECLARATION ==== */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+/*
+body {
+  background-color: #eee;
+}
+
+header {
+  background-color: gainsboro;
+}
+
+.location, .gifts, .contact {
+  background-color: aqua;
+}
+footer {
+  background-color: antiquewhite;
+} 
+*/
+
+
+/* ==== HEADER STYLES ====*/
+
+@media (min-width: 768px){
+  
+  .byline {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width:50%;
+  }
+}
+
+.cover {
+  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat center ;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+.byline {
+  background-color: hsla(100,0%,0%,.6);
+  letter-spacing: .1rem;
+  margin: 0 auto;
+}
+
+.tagline, .date {
+  font-family: 'Libre Baskerville',serif;
+  color: hsla(0,0%,100%,.9);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem; 
+  padding: 1rem;
+}
+
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #d2ba87;
+  font-size: 3rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+}
+
+.date::before, .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+/* ==== MAIN STYLES ==== */
+
+main h2 {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 2.5rem;
+}
+
+/* Background Styles */
+
+.location, .gifts, .contact {
+  background: url(assets/wedding-landing-background.png) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #444349;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+
+@media (min-width: 768px){
+  .location, .gifts, .contact {
+    height: 50vh;
+  }
+}
+
+.program, .questions  {
+  background-color: hsla(100,0%,0%,.6);
+  color:  #d2ba87;
+}
+
+/* Location Section Styles */
+
+img{
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.place {
+  font-family: 'Mulish', sans-serif;
+  padding: 0.5rem;  
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.blurb {
+  margin-bottom: 3rem;
+}
+
+.blurb::after {
+    display: block;
+    content: "";
+    background-color: #444349;
+    height: 3px;
+    width: 8rem;;
+    margin: .9rem auto;
+}
+
+@media (min-width: 768px) {
+  
+  .blurb::after {
+    display:none
+  }
+  
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin:.5rem
+  }
+}
+
+/* Program Section Styles */
+
+.program-wrapper {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+  padding: 1.5625rem;
+  
+}
+
+@media (min-width: 768px) {
+  .program-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+ul {
+  padding-top: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Gifts Section Styles */
+
+.gift-box {
+  width: 9.375rem;
+  height: 9.375rem;
+  margin: 4rem auto;
+}
+
+.gifts {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: table-cell;
+  width: 100vw;
+  height: 80vh;
+}
+
+/* Question Section Styles */
+
+.questions {
+    width: 100%;
+    height: 100%
+    color: #d2ba87;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.625rem
+}
+
+.question-group {
+  
+}
+
+.question-group::after {
+  display: block;
+  content: "";
+  background-color: #d2ba87;
+  height: 3px;
+  width: 20rem;;
+  margin: 3rem auto; 
+}
+
+
+h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+}
+
+.question, .answer {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.25rem;
+  padding-top: 1.5rem;
+  line-height: 1;
+  
+}
+
+.questions{
+  font-weight: 900;  
+}
+
+@media (min-width: 768px) {
+  
+  .question-group::after {
+    display: none;
+  }
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+    text-align: left;
+  }
+  h4 {
+    text-align: left;
+  }
+  
+}
+
+/* Contact Section Styles */
+
+.contact {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: table-cell;
+  width: 100vw;
+  height: 50vh;
+}
+
+.
+
+.availability {
+  vertical-align: middle
+  display: table-cell;
+  width: 100vw;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color:#bd806e;
+}
+
+a:hover{
+  color: #eda087;
+  transition: background-color .15s ease-in-out;
+}
+
+/* Footer Styles */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 50px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+}
+
+
+/* ===== FOOTER STYLE ====*/
+
+.footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  height: 5rem;
+  background-color: #606060;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.0625rem;  
+}
+
+
